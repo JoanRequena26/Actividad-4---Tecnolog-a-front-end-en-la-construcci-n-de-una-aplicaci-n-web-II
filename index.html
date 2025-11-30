@@ -321,8 +321,7 @@
         </div>
     </main>
 
-    <!-- MODALS -->
-
+    <!-- MODALS (igual que antes) -->
     <!-- Product Modal -->
     <div id="product-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-40 flex items-center justify-center p-4">
         <div class="bg-white rounded-xl shadow-lg w-full max-w-md overflow-hidden">
@@ -513,7 +512,7 @@
         </div>
     </div>
 
-    <!-- Confirmation Modal (New) -->
+    <!-- Confirmation Modal -->
     <div id="confirm-modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
         <div class="bg-white rounded-xl shadow-lg w-full max-w-sm overflow-hidden transform transition-all">
             <div class="p-6">
@@ -534,7 +533,12 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT LOGIC -->
+    <!-- API base (ajusta si tu backend está en otra URL) -->
+    <script>window.__PYME_API_BASE__ = 'http://localhost:3000';</script>
+
+    <!-- API wrapper -->
+    <script src="app.api.js" defer></script>
+    <!-- Main app logic -->
     <script src="app.js" defer></script>
 </body>
 </html>
